@@ -27,8 +27,8 @@ test('team итерируется, итератор отдаёт объекты 
   }
   const result = [];
   for (const person of team) {
-    if (team[person] !== undefined) {
-      result.push(team[person]);
+    if (person) {
+      result.push(person);
     }
   }
   expect(result).toEqual([
